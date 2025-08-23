@@ -9,13 +9,16 @@ builder.Services.ServiceConfiguration(builder.Configuration);
 
 builder.Services.AddControllers(options =>
 {
-#pragma warning disable ASP0000 // Do not call 'IServiceCollection.BuildServiceProvider' in 'ConfigureServices'
     var logger = builder.Services
         .BuildServiceProvider()
         .GetRequiredService<ILogger<ResponseHeaderFilter>>();
-#pragma warning restore ASP0000 // Do not call 'IServiceCollection.BuildServiceProvider' in 'ConfigureServices'
 
-    options.Filters.Add(new ResponseHeaderFilter(logger,"X-Developer-Info", "Prashant Kumar Snehi"));
+    //// specify the order of the execution in generic declaration
+    //options.Filters.Add<ResponseHeaderFilter>(4);
+
+    options.Filters.Add(new ResponseHeaderFilter(logger, "X-Developer-Info", "Prashant Kumar Snehi", 0));
+    options.Filters.Add(new ResponseHeaderAsyncFilter(builder.Services.BuildServiceProvider()
+        .GetRequiredService<ILogger<ResponseHeaderAsyncFilter>>(), "X-ExecutionStart-Info", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), 0));
  });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

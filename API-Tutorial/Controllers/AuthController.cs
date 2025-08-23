@@ -15,7 +15,7 @@ namespace API_Tutorial.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [TypeFilter(typeof(ResponseHeaderFilter), Arguments = new object[] { "X-Controller-Info", "AuthController" })]
+    [TypeFilter(typeof(ResponseHeaderFilter), Arguments = new object[] { "X-Controller-Info", "AuthController", 1 }, Order = 1)]
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;

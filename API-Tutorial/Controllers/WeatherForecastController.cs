@@ -5,7 +5,7 @@ namespace API_Tutorial.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-[TypeFilter(typeof(ResponseHeaderFilter), Arguments = new object[] { "X-Server-Info", "Prashant"})]
+[TypeFilter(typeof(ResponseHeaderFilter), Arguments = new object[] { "X-Server-Info", "Prashant", 1 })]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
@@ -21,7 +21,7 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
-    [TypeFilter(typeof(ResponseHeaderFilter), Arguments = new object[] { "X-Location-Info", "India" })]
+    [TypeFilter(typeof(ResponseHeaderFilter), Arguments = new object[] { "X-Location-Info", "India" }, Order = 0)]
     public IEnumerable<WeatherForecast> Get()
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
