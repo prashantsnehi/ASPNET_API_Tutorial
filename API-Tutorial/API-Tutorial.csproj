@@ -32,6 +32,11 @@
     <None Remove="Infrastructure\EntityConfiguration\" />
     <None Remove="Filters\" />
     <None Remove="Helpers\" />
+    <None Remove="Services\" />
+    <None Remove="Services\AuthService\" />
+    <None Remove="Models\" />
+    <None Remove="Dto\" />
+    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Infrastructure\" />
@@ -39,5 +44,10 @@
     <Folder Include="Infrastructure\EntityConfiguration\" />
     <Folder Include="Filters\" />
     <Folder Include="Helpers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\AuthService\" />
+    <Folder Include="Models\" />
+    <Folder Include="Dto\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 </Project>

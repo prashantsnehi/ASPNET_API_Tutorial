@@ -13,3 +13,9 @@ public enum Gender
 	Other
 }
 
+public enum Status
+{
+	Success,
+	Failed
+}
+
