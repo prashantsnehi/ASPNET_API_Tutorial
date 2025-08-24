@@ -37,6 +37,7 @@
     <None Remove="Models\" />
     <None Remove="Dto\" />
     <None Remove="Extensions\" />
+    <None Remove="Services\WeatherServices\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Infrastructure\" />
@@ -49,5 +50,6 @@
     <Folder Include="Models\" />
     <Folder Include="Dto\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Services\WeatherServices\" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
-﻿using System;
-using API_Tutorial.Infrastructure;
+﻿using API_Tutorial.Infrastructure;
 using API_Tutorial.Services.AuthService;
+using API_Tutorial.Services.WeatherServices;
 using Microsoft.EntityFrameworkCore;
 
 namespace API_Tutorial.Extensions;
@@ -16,6 +16,7 @@ public static class ServicesExtension
         });
 
         service.AddScoped<IAuthService, AuthService>();
+        service.AddScoped<IWeatherService, WeatherService>();
 		return service;
 	}
 }
