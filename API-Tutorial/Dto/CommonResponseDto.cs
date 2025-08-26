@@ -1,5 +1,4 @@
-﻿using System;
-using API_Tutorial.Helpers;
+﻿using API_Tutorial.Helpers;
 namespace API_Tutorial.Dto;
 
 public class CommonResponseDto<T>

@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 namespace API_Tutorial.Models;
 
 public class LoginModel
@@ -10,4 +9,3 @@ public class LoginModel
 	[Required]
 	public string? Password { get; set; }
 }
-

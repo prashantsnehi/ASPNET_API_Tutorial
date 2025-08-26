@@ -1,5 +1,4 @@
-﻿
-namespace API_Tutorial.Services.WeatherServices;
+﻿namespace API_Tutorial.Services.WeatherServices;
 
 public class WeatherService : IWeatherService
 {
@@ -23,4 +22,3 @@ public class WeatherService : IWeatherService
         return await Task.FromResult(weatherForecast);
     }
 }
-

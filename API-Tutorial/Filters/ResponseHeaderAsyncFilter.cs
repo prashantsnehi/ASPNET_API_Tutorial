@@ -1,8 +1,6 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc.Filters;
+﻿using Microsoft.AspNetCore.Mvc.Filters;
 using API_Tutorial.Controllers;
 namespace API_Tutorial.Filters;
-
 
 public class ResponseHeaderAsyncFilter : IAsyncActionFilter, IOrderedFilter
 {
@@ -45,4 +43,3 @@ public class ResponseHeaderAsyncFilter : IAsyncActionFilter, IOrderedFilter
         }
     }
 }
-

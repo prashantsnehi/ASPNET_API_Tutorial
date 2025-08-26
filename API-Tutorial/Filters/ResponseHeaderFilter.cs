@@ -1,7 +1,5 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc.Filters;
+﻿using Microsoft.AspNetCore.Mvc.Filters;
 namespace API_Tutorial.Filters;
-
 
 public class ResponseHeaderFilter : IActionFilter, IOrderedFilter
 {
@@ -30,4 +28,3 @@ public class ResponseHeaderFilter : IActionFilter, IOrderedFilter
         context.HttpContext.Response.Headers[_key] = _value;
     }
 }
-

@@ -44,7 +44,6 @@
     <Folder Include="Infrastructure\Entity\" />
     <Folder Include="Infrastructure\EntityConfiguration\" />
     <Folder Include="Filters\" />
-    <Folder Include="Helpers\" />
     <Folder Include="Services\" />
     <Folder Include="Services\AuthService\" />
     <Folder Include="Models\" />

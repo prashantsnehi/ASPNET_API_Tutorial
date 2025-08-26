@@ -1,6 +1,4 @@
-﻿using API_Tutorial.Infrastructure;
-using Microsoft.EntityFrameworkCore;
-using API_Tutorial.Filters;
+﻿using API_Tutorial.Filters;
 using API_Tutorial.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 

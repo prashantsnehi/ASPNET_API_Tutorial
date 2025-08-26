@@ -1,5 +1,4 @@
-﻿using System;
-namespace API_Tutorial.Helpers;
+﻿namespace API_Tutorial.Helpers;
 
 public static class Constants
 {
@@ -18,4 +17,3 @@ public enum Status
 	Success,
 	Failed
 }
-
